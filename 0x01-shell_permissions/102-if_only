@@ -1,2 +1,2 @@
 #!/bin/bash
-chown --form=guillaume betty hello
+find hello -user guillaume -exec chown betty {} \;
